@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Fetch App</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      #pokemon-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .pokemon {
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 5px;
+        width: 150px;
+        text-align: center;
+      }
+      #loader {
+        display: none;
+        text-align: center;
+        font-size: 18px;
+      }
+      #search {
+        padding: 0.5em;
+        border-radius: 0.5em;
+        border: 1px solid #a1a1a1;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pokemon List</h1>
+    <input type="text" id="search" placeholder="Busca un Pokemon" />
+    <hr />
+    <div id="loader">Cargando...</div>
+    <div id="pokemon-list"></div>
+    <!-- <script src="app.js"></script> -->
+    <script src="app_v2.js"></script>
+  </body>
+</html>
